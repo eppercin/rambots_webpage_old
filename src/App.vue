@@ -17,7 +17,7 @@
                         <v-tab to="/">Home</v-tab>
                         <v-tab to="/timeline">Timeline</v-tab>
                         <v-tab to="/team">Team</v-tab>
-                        <v-tab to="/resources">Resources</v-tab>
+                        <v-tab to="/resources">Documents</v-tab>
                         <v-tab to="/gallery">Gallery</v-tab>
                     </v-tabs>
                 </v-flex>
@@ -49,11 +49,16 @@
       >
         {{ link }}
       </v-btn>
-      <v-col
-        class=" py-1 text-center white--text"
-        cols="12"
-      >
-         2022/2023  — <strong>Colorado State University</strong>
+      <v-col class=" py-1 text-center white--text"
+             cols="12">
+          <a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE"
+             class="white--text text-decoration-underline">Support our program</a> —
+          <a href="http://www.engr.colostate.edu/ECE401/AY22_senior_design_projects.php"
+             class="white--text text-decoration-underline">Other ECE Sr. Design projects</a> —
+          <a href="https://www.engr.colostate.edu/ece/"
+             class="white--text text-decoration-underline">ECE Department</a> —
+          <a href="http://www.colostate.edu/"
+             class="white--text text-decoration-underline">CSU main website</a>
       </v-col>
     </v-row>
   </v-footer>

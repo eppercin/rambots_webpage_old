@@ -2,47 +2,77 @@
 
 
     
-        <v-card color="white" elevation="0" class="pa-8 ma-4">
-            <v-row class="text-center">
-                <v-col class="text-center d-flex justify-space-around"
-                       v-for="card in cards"
-                       :key="card.title">
+    <v-card color="white" elevation="0" class="pa-8 ma-4">
+        <v-row class="text-center">
+            <v-col class="text-center d-flex justify-space-around"
+                   v-for="card in cards"
+                   :key="card.title">
 
-                    <v-card width="250px" >
-                        <v-img :src="card.src"
-                               class="white--text align-end"
-                               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                               height="300px">
-                            <v-card-title v-text="card.title"></v-card-title>
-                        </v-img>
-                        <v-card outlined color="transparent" height="220px">
-                            
-                            <v-card-text class="grow text-left px-2 mt-2 mb-n2">{{card.text}}</v-card-text>
-                        </v-card>
+                <v-card width="250px">
+                    <v-img :src="card.src"
+                           class="white--text align-end"
+                           gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                           height="300px">
+                        <v-card-title v-text="card.title"></v-card-title>
+                    </v-img>
+                    <v-card outlined color="transparent" height="220px">
 
-                            <v-card-actions>
-
-
-                                <v-btn icon :disabled="card.resume == null">
-                                    <v-icon>mdi-file-account</v-icon>
-                                </v-btn>
-
-                                <v-btn icon :disabled="card.email == null">
-                                    <v-icon>mdi-email</v-icon>
-                                </v-btn>
-
-                                <v-btn icon :disabled="card.linkedin == null">
-                                    <v-icon>mdi-linkedin</v-icon>
-                                </v-btn>
-                            </v-card-actions>
-
-                        
-                       
+                        <v-card-text class="grow text-left px-2 mt-2 mb-n2">{{card.text}}</v-card-text>
                     </v-card>
-                </v-col>
-            </v-row>
-        </v-card>
-   
+
+                    <v-card-actions>
+
+
+                        <v-btn icon :disabled="card.resume == null">
+                            <v-icon>mdi-file-account</v-icon>
+                        </v-btn>
+
+                        <v-btn icon :disabled="card.email == null">
+                            <v-icon>mdi-email</v-icon>
+                        </v-btn>
+
+                        <v-btn icon :disabled="card.linkedin == null">
+                            <v-icon>mdi-linkedin</v-icon>
+                        </v-btn>
+                    </v-card-actions>
+
+
+
+                </v-card>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col cols="3"><v-spacer></v-spacer></v-col>
+            <v-col cols="3">
+                <p class="text-center font-weight-light text-h4 text--primary mt-8">
+                    Advisor
+                </p>
+                <v-divider class="mt-n4 mb-2"></v-divider>
+                <p class="text-center font-weight-light">Olivera Notaros</p>
+            </v-col>
+
+            <v-col cols="3">
+                <p class="text-center font-weight-light text-h4 text--primary mt-8">
+                    Industry Members
+                </p>
+                <v-divider class="mt-n4 mb-2"></v-divider>
+                <p class="text-center font-weight-light">David Farrell</p>
+                <p class="text-center font-weight-light">Ian Bernstein</p>
+            </v-col>
+            <v-col cols="3"><v-spacer></v-spacer></v-col>
+        </v-row>
+
+
+        <v-container fluid>
+            <v-layout justify-center align-center>
+                <v-flex shrink>
+                    <v-img width="1200px" class="mt-4 elevation-2" :src="require('../assets/year1/team_full.jpg')"></v-img>
+                </v-flex>
+            </v-layout>
+        </v-container>
+
+    </v-card>
+
 
 </template>
 
@@ -61,7 +91,7 @@
                     { title: 'Thomas Veldhuizen', src: require('../assets/year1/thomas_veldhuizen.jpg'), flex: 6, text:"I am a fourth year majoring in Computer Engineering with a minor in Computer Science. I would like to pursue a career in cyber security or in secure hardware design. My hobbies include learning new languages, programming or otherwise and practicing music." },
 
                     { title: 'Alex Kolodzik', src: require('../assets/placeholder.jpg'), flex: 6, text:"Alex Kolodzik is a junior at CSU pursuing an electrical engineering degree. He has a passion for robots and his passion project is building his own functioning Iron Man Helmet." },
-                    { title: 'Gwyn Tari', src: require('../assets/placeholder.jpg'), flex: 6, text:"Third year computer engineering student. Senior design VIP student. ECE outreach student and ENpower Engineering mentor." },
+                    { title: 'Gwyn Tari', src: require('../assets/year2/gwyn_tari.jpg'), flex: 6, text:"Third year computer engineering student. Senior design VIP student. ECE outreach student and ENpower Engineering mentor." },
                 ],
                
             }
