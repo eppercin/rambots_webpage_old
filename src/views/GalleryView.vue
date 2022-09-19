@@ -75,6 +75,7 @@
                 construction: [
                     { title: 'Chassis side view', src: require('../assets/chassis.jpg'), flex: 4 },
                     { title: 'Chassis diagonal view', src: require('../assets/chassis2.jpg'), flex: 4 },
+                    { title: 'Silicone Molded Foot', src: require('../assets/feet_mold.jpg'), flex: 4 },
                 ],
                 art: [
                     { title: 'Logos by Gwyn Tari', src: require('../assets/RamLogoLarge.png'), flex: 4 },
