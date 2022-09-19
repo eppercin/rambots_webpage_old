@@ -128,16 +128,16 @@
         data() {
             return {
                 cards: [
-                    { title: 'Michael Bearly', src: require('../assets/year2/michael_bearly.jpg'), flex: 6, linkedin: "", text: "" },
-                    { title: 'Kyle Biskupski', src: require('../assets/placeholder.jpg'), flex: 6, linkedin: "", text: "" },
+                    { title: 'Michael Bearly', src: require('../assets/year2/michael_bearly.jpg'), flex: 6,  text: "" },
+                    { title: 'Kyle Biskupski', src: require('../assets/year2/kyle_biskupski.jpg'), flex: 6, text: "I am a senior in Electrical Engineering at Colorado State University. I enjoy learning how sensors work and integrating them into a system with microcontrollers to solve problems." },
                     { title: 'Gwyn Tari', src: require('../assets/year2/gwyn_tari.jpg'), flex: 6, linkedin: "https://www.linkedin.com/in/gwyndolyn-tari-278946215?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2B%2FD5pQFLRd2w2dKtWGD8Ig%3D%3D", text: "I am a senior computer engineering student. I am interested in control systems and robotics. I am also a RamBOTs co-captain, vice president for CSU's chapter of IEEE-HKN, president of ECE outreach, and an ENpower mentor." },
-                    { title: 'Evan Hassman', src: require('../assets/placeholder.jpg'), flex: 6, linkedin: "", text: "" },
-                    { title: 'Alex Kolodzik', src: require('../assets/placeholder.jpg'), flex: 6, linkedin: "", text: "" },
-                    { title: 'Kyle Moore', src: require('../assets/placeholder.jpg'), flex: 6, linkedin: "", text: "" },
+                    { title: 'Evan Hassman', src: require('../assets/placeholder.jpg'), flex: 6,  text: "" },
+                    { title: 'Alex Kolodzik', src: require('../assets/placeholder.jpg'), flex: 6,  text: "" },
+                    { title: 'Kyle Moore', src: require('../assets/placeholder.jpg'), flex: 6,  text: "" },
                     {
                         title: 'Eric Olson', src: require('../assets/year2/eric_olson.jpg'), flex: 6, text: "I am a senior in mechanical engineering with a minor in mathematics. I'm interested in all things tech and renewable energy. I'm also a big Avalanche and Broncos fan."},
                     { title: 'Eric Percin', src: require('../assets/year2/eric_percin.jpg'), flex: 6, linkedin: "https://www.linkedin.com/in/eric-percin-044a13215/", text: "I am a senior majoring in Computer Engineering with a minor in Mathematics. I am interested in hardware-software codesign and hope to work in embedded systems. My hobbies include working with computers, cycling, and esports." },
-                    { title: 'Thomas Veldhuizen', src: require('../assets/placeholder.jpg'), flex: 6 },
+                    { title: 'Thomas Veldhuizen', src: require('../assets/year2/thomas_veldhuizen.png'), flex: 6, text:"I am a senior in Computer Engineering with a minor in computer science. I am interested in embedded systems and information security. My hobbies are hiking and traveling, I also like to box." },
 
                     
                 ],
