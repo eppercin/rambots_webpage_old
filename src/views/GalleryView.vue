@@ -8,7 +8,7 @@
             <v-col class="text-center d-flex justify-space-around"
                    v-for="card in construction"
                    :key="card.title"
-                   :cols="card.flex">
+                   :cols="mobile ? 12 : 4">
 
                 <v-card>
                     <v-img :src="card.src"
@@ -26,7 +26,7 @@
             <v-col class="text-center d-flex justify-space-around"
                    v-for="card in art"
                    :key="card.title"
-                   :cols="card.flex">
+                   :cols="mobile ? 12 : 4">
 
                 <v-card>
                     <v-img :src="card.src"
@@ -43,12 +43,13 @@
             <v-col class="text-center d-flex justify-space-around"
                    v-for="card in team"
                    :key="card.title"
-                   :cols="card.flex">
+                  :cols="mobile ? 12 : 6">
 
                 <v-card>
-                    <v-img :src="card.src"
+                    <v-img 
+                           :src="card.src"
                            class="white--text align-end"
-                           height="600px"
+                           :height="mobile ? 300 : 600"
                            gradient="to bottom, rgba(0,0,0,.05), rgba(0,0,0,.2)">
                         <v-card-title v-text="card.title"></v-card-title>
                     </v-img>
@@ -68,9 +69,12 @@
 <script>
 
     export default {
-
+        mounted() {
+            this.mobile = window.innerWidth <= 760
+        },
         data() {
             return {
+                mobile: false,
                 logo: require('../assets/chassis.jpg'),
                 construction: [
                     { title: 'Chassis side view', src: require('../assets/chassis.jpg'), flex: 4 },
@@ -79,7 +83,7 @@
                 ],
                 art: [
                     { title: 'Logos by Gwyn Tari', src: require('../assets/RamLogoLarge.png'), flex: 4 },
-                    { title: '', src: require('../assets/RamLogoMed.png'), flex: 4 },
+                    { title: ' ', src: require('../assets/RamLogoMed.png'), flex: 4 },
                     { title: '', src: require('../assets/RamLogoSmall.png'), flex: 4 },
                 ],
                 team: [

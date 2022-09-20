@@ -6,7 +6,7 @@
         <v-col cols="2">
             <v-spacer></v-spacer>
         </v-col>
-        <v-col cols="8">
+        <v-col :cols="this.mobile ? 12 : 8">
             <v-card max-width="1800" class="mt-4 pa-4">
                 <p class="text-h4 text--primary mt-4">
                     Project Timeline
@@ -35,9 +35,12 @@
 <script>
 
     export default {
-
+        mounted() {
+            this.mobile = window.innerWidth <= 760
+        },
         data() {
             return {
+                mobile: false,
                 logo: require('../assets/chassis.jpg'),
                
             }

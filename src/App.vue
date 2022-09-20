@@ -6,13 +6,13 @@
                    color="#1E4D2B" >
             <v-app-bar-nav-icon color="white"> </v-app-bar-nav-icon>
             <v-img max-width="201px" :src="require('./assets/CSUWatermarkSmall.png')"></v-img>
-            <v-spacer></v-spacer>
+            
 
 
 
 
             <template v-slot:extension >
-                <v-flex class="ml-0">
+                <v-flex class="ml-n8">
                     <v-tabs color="#1E4D2B" align-with-title>
                         <v-tab to="/">Home</v-tab>
                         <v-tab to="/timeline">Timeline</v-tab>
@@ -53,7 +53,7 @@
              cols="12">
           <a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE"
              class="white--text text-decoration-underline">Support our program</a> —
-          <a href="http://www.engr.colostate.edu/ECE401/AY22_senior_design_projects.php"
+          <a href="https://www.engr.colostate.edu/ece/senior-design/?ay=2022"
              class="white--text text-decoration-underline">Other ECE Sr. Design projects</a> —
           <a href="https://www.engr.colostate.edu/ece/"
              class="white--text text-decoration-underline">ECE Department</a> —

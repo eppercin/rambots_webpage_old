@@ -3,7 +3,7 @@
 
     <v-container>
         <v-row class="mt-4">
-            <v-col cols="5">
+            <v-col :cols="this.mobile ? 12 : 5">
                 <v-card class=" pa-2 mt-12 justify-center" outlined color="transparent" height="100%">
                     <div class="text-center">
                         <v-row>
@@ -25,9 +25,9 @@
                     </div>
                 </v-card>
             </v-col>
-            <v-col cols="7">
+            <v-col :cols="this.mobile ? 12 : 7">
                 <v-card class="pa-2" outlined color="transparent">
-                    <v-carousel height="600" width="500">
+                    <v-carousel :height="this.mobile ? 300 : 600" width="500">
                         <v-carousel-item reverse-transition="fade-transition"
                                          transition="fade-transition"
                                          v-for="(item, i) in items"
@@ -46,7 +46,7 @@
             <v-col cols="2">
                 <v-spacer></v-spacer>
             </v-col>
-            <v-col cols="8">
+            <v-col :cols="this.mobile ? 12 : 8">
                 <v-card  outlined  class="mb-4">
                     <v-card-text>
                         <div>About Us</div>
@@ -189,9 +189,13 @@
 
 <script>
     export default {
+        mounted() {
+            this.mobile = window.innerWidth <= 760
+        },
         data() {
             return {
                 logo: require('../assets/chassis.jpg'),
+                mobile: false,
                 url: "https://projects-web.engr.colostate.edu/ece-sr-design/AY21/outreach/",
                 items: [
                     {

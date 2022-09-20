@@ -6,7 +6,7 @@
         <v-col cols="1">
             <v-spacer></v-spacer>
         </v-col>
-        <v-col class="d-flex justify-center align-center">
+        <v-col cols="this.mobile ? 12 : 10" class="d-flex justify-center align-center">
             <v-card max-width="1500px" class="mt-4 pa-4">
                 <v-tabs @change="console.log(tab)" v-model="tab" color="#1E4D2B">
                     <v-tab >2022/2023</v-tab>
@@ -34,6 +34,9 @@
     import TeamYear1 from '../components/TeamYear1.vue'
     import TeamYear2 from '../components/TeamYear2.vue'
     export default {
+        mounted() {
+            this.mobile = window.innerWidth <= 760
+        },
         computed: {
             console: () => console,
             window: () => window,
@@ -44,6 +47,7 @@
         },
         data() {
             return {
+                mobile: false,
                 logo: require('../assets/chassis.jpg'),
                 tab: null,
                 url: "https://projects-web.engr.colostate.edu/ece-sr-design/AY21/outreach/",
