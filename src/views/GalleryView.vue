@@ -75,16 +75,19 @@
         data() {
             return {
                 mobile: false,
-                logo: require('../assets/chassis.jpg'),
+                logo: require('../assets/gallery/chassis.jpg'),
                 construction: [
-                    { title: 'Chassis side view', src: require('../assets/chassis.jpg'), flex: 4 },
-                    { title: 'Chassis diagonal view', src: require('../assets/chassis2.jpg'), flex: 4 },
-                    { title: 'Silicone Molded Foot', src: require('../assets/feet_mold.jpg'), flex: 4 },
+                    { title: 'Chassis side view', src: require('../assets/gallery/chassis.jpg'), flex: 4 },
+                    { title: 'Chassis diagonal view', src: require('../assets/gallery/chassis2.jpg'), flex: 4 },
+                    { title: 'Assembling the robot', src: require('../assets/gallery/robot_assembly.jpg'), flex: 4 },
+                    { title: 'Programming the Pi', src: require('../assets/gallery/pi_programming.jpg'), flex: 4 },
+                    { title: 'Disassembling a leg for testing', src: require('../assets/gallery/leg_testing.jpg'), flex: 4 },
+                    { title: 'Meeting with EIR', src: require('../assets/gallery/eir_meeting.jpg'), flex: 4 },
                 ],
                 art: [
-                    { title: 'Logos by Gwyn Tari', src: require('../assets/RamLogoLarge.png'), flex: 4 },
-                    { title: ' ', src: require('../assets/RamLogoMed.png'), flex: 4 },
-                    { title: '', src: require('../assets/RamLogoSmall.png'), flex: 4 },
+                    { title: 'Logos by Gwyn Tari', src: require('../assets/gallery/RamLogoLarge.png'), flex: 4 },
+                    { title: ' ', src: require('../assets/gallery/RamLogoMed.png'), flex: 4 },
+                    { title: '', src: require('../assets/gallery/RamLogoSmall.png'), flex: 4 },
                 ],
                 team: [
                     { title: 'Team Seniors', src: require('../assets/team_seniors.jpg'), flex: 6 },

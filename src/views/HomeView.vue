@@ -194,18 +194,18 @@
         },
         data() {
             return {
-                logo: require('../assets/chassis.jpg'),
+                logo: require('../assets/gallery/chassis.jpg'),
                 mobile: false,
                 url: "https://projects-web.engr.colostate.edu/ece-sr-design/AY21/outreach/",
                 items: [
                     {
-                        src: require('../assets/chassis.jpg'),
+                        src: require('../assets/gallery/chassis.jpg'),
                     },
                     {
                         src: require('../assets/year2/team_full.jpg'),
                     },
                     {
-                        src: require('../assets/chassis2.jpg'),
+                        src: require('../assets/gallery/chassis2.jpg'),
                     },
                 ],
             }

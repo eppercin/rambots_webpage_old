@@ -48,7 +48,7 @@
         data() {
             return {
                 mobile: false,
-                logo: require('../assets/chassis.jpg'),
+                logo: require('../assets/gallery/chassis.jpg'),
                 tab: null,
                 url: "https://projects-web.engr.colostate.edu/ece-sr-design/AY21/outreach/",
 

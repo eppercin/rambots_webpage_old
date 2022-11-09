@@ -41,7 +41,7 @@
         data() {
             return {
                 mobile: false,
-                logo: require('../assets/chassis.jpg'),
+                logo: require('../assets/gallery/chassis.jpg'),
                
             }
         },
